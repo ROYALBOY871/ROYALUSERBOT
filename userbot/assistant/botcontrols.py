@@ -3,8 +3,6 @@ from datetime import datetime
 
 from telethon.errors import BadRequestError, FloodWaitError, ForbiddenError
 
-from userbot import legend
-
 from ..Config import Config
 from ..core.logger import logging
 from ..core.managers import eod, eor
