@@ -1,6 +1,6 @@
 from telethon import events
 
-PM_IMG = "https://telegra.ph/file/c26fc61e904476083baa7.jpg"
+PM_IMG = "https://te.legra.ph/file/45ef597ef5ddc3039fc5c.jpg"
 pm_caption = f"⚜ ROYALBot is Online ⚜ \n\n"
 pm_caption += f"Owner ~ 『{royal_mention}』\n"
 pm_caption += f"**╭───────────**\n"
