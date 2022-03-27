@@ -8,7 +8,7 @@ from . import hmention, royal
 menu_category = "tools"
 
 
-@royal.legend_cmd(
+@royal.royal_cmd(
     pattern="ping( -a|$)",
     command=("ping", menu_category),
     info={
