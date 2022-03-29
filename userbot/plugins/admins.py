@@ -18,8 +18,8 @@ from telethon.tl.types import (
     MessageEntityMentionName,
     MessageMediaPhoto,
 )
-
 from Userbot.utils import *
+
 from userbot import *
 from userbot.cmdhelp import CmdHelp
 from userbot.Config import Config
@@ -251,7 +251,7 @@ async def nothanos(unbon):
     if not admin and not creator:
         await edit_or_reply(unbon, NO_ADMIN)
         return
-    RYevent = await edit_or_reply(unbon, "Unbanning...")
+    await edit_or_reply(unbon, "Unbanning...")
     user = await get_user_from_event(unbon)
     user = user[0]
     if not user:
@@ -339,7 +339,7 @@ async def kick(usr):
     if not user:
         await edit_or_reply(usr, "Couldn't fetch user.")
         return
-    RYevent = await edit_or_reply(usr, "Kicking...")
+    await edit_or_reply(usr, "Kicking...")
     try:
         await usr.client.kick_participant(usr.chat_id, user.id)
         await sleep(0.5)
